@@ -48,7 +48,7 @@
             <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
             <li><a href="index.html#features" class="xl">About Us</a></li>
             <li><a href="index.html#services" class="xl">Services</a></li>
-            <li class="c i" x-data="{ dropdown: false }">
+            <!-- <li class="c i" x-data="{ dropdown: false }">
               <a href="#!" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
                 :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
                 Pages
@@ -58,18 +58,19 @@
                   <path
                     d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                 </svg>
-              </a>
+              </a> -->
 
               <!-- Dropdown Start -->
-              <ul class="a" :class="{ 'tc': dropdown }">
-                <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-                <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
-                <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
-                <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
-                <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
-              </ul>
+              <!-- <ul class="a" :class="{ 'tc': dropdown }"> -->
+                <!-- <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li> -->
+                <!-- <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li> -->
+                <!-- <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
+                <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li> -->
+                <!-- <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li> -->
+              <!-- </ul> -->
               <!-- Dropdown End -->
-            </li>
+            <!-- </li> -->
+            <li><a href="blog-grid.html" class="xl">Blogs</a></li>
             <li><a href="index.html#support" class="xl">Support</a></li>
           </ul>
         </nav>
@@ -117,14 +118,13 @@
       <div class="bb ze ki xn 2xl:ud-px-0">
         <div class="tc _o">
           <div class="animate_left jn/2">
-            <h1 class="fk vj zp or kk wm wb">We specialize in UI/UX, Web Development, Digital Marketing.</h1>
+            <h1 class="fk vj zp or kk wm wb">Powering Your Digital Growth with Smart IT Solutions</h1>
             <p class="fq">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris. Nulla fermentum
-              viverra sem eu rhoncus consequat varius nisi quis, posuere magna.
+              We design high-performance websites, scalable eCommerce platforms, result-driven digital marketing strategies, and SEO solutions that help your business grow faster in the digital world.
             </p>
 
             <div class="tc tf yo zf mb">
-              <a href="#!" class="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</a>
+              <a href="index.html#support" class="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</a>
 
               <span class="tc sf">
                 <a href="#!" class="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
@@ -198,23 +198,100 @@
 
           <!-- About Content -->
           <div class="animate_right jn/2">
-            <h4 class="ek yj mk gb">Why Choose Us</h4>
             <h2 class="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
-            <p class="uo">It is a long established fact that a reader will be distracted by the readable content of a
-              page when looking at its layout. The point of using Lorem Ipsum.</p>
+            <h4 class="ek yj mk gb">Who We Are</h4>
+            <p class="uo">
+              We are a passionate team of developers, designers, and digital marketers committed to delivering powerful IT solutions that help brands grow online. 
+              From building stunning websites to driving qualified traffic and increasing sales, we make technology work for your business.
+            </p>
 
-            <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fslightbox class="vc wf hg mb">
+            <h4 class="ek yj mk gb ">Our Mission</h4>
+            <p class="uo">
+              To help businesses of all sizes achieve digital success through innovative technology, creative design, and data-driven marketing strategies.
+            </p>
+
+            <h4 class="ek yj mk gb">Our Vision</h4>
+            <p class="uo">
+              To become a trusted digital partner for businesses worldwide by delivering reliable, scalable, and future-ready solutions.
+            </p>
+
+            <!-- <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fslightbox class="vc wf hg mb">
               <span class="tc wf xf be dd rg i gh ua">
                 <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
                 <img src="images/icon-play.svg" alt="Play" />
               </span>
               <span class="kk">SEE HOW WE WORK</span>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
     </section>
     <!-- ===== About End ===== -->
+
+
+    <!-- ===== Services Start ===== -->
+    <section id="services" class="lj tp kr">
+      <!-- Section Title Start -->
+      <div
+        x-data="{ sectionTitle: `What We Do Best`, sectionTitleText: `We combine creativity, technology, and strategy to deliver smart digital solutions that elevate your brand and drive measurable growth.`}">
+        <div class="animate_top bb ze rj ki xn vq">
+          <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
+          </h2>
+          <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+        </div>
+
+
+      </div>
+      <!-- Section Title End -->
+
+      <div class="bb ze ki xn yq mb en">
+        <div class="wc qf pn xo ng">
+          <!-- Service Item -->
+          <div class="animate_top sg oi pi zq ml il am cn _m">
+            <img src="images/icon-04.svg" alt="Icon" />
+            <h4 class="ek zj kk wm nb _b">Web Development</h4>
+            <p>Custom websites, business websites, portfolio sites, and web applications built for speed, security, and performance.</p>
+          </div>
+
+          <!-- Service Item -->
+          <div class="animate_top sg oi pi zq ml il am cn _m">
+            <img src="images/icon-05.svg" alt="Icon" />
+            <h4 class="ek zj kk wm nb _b">E-Commerce Development</h4>
+            <p>Complete online store setup using Shopify, WooCommerce, and custom platforms with secure payment integration.</p>
+          </div>
+
+          <!-- Service Item -->
+          <div class="animate_top sg oi pi zq ml il am cn _m">
+            <img src="images/icon-06.svg" alt="Icon" />
+            <h4 class="ek zj kk wm nb _b">Digital Marketing</h4>
+            <p>Grow your brand visibility and reach the right audience through social media marketing, paid ads, and content marketing.</p>
+          </div>
+
+          <!-- Service Item -->
+          <div class="animate_top sg oi pi zq ml il am cn _m">
+            <img src="images/icon-07.svg" alt="Icon" />
+            <h4 class="ek zj kk wm nb _b">SEO (Search Engine Optimization)</h4>
+            <p>Rank higher on Google with our on-page, off-page, technical SEO and local SEO strategies.</p>
+          </div>
+
+          <!-- Service Item -->
+          <div class="animate_top sg oi pi zq ml il am cn _m">
+            <img src="images/icon-05.svg" alt="Icon" />
+            <h4 class="ek zj kk wm nb _b">UI/UX Design</h4>
+            <p>Clean, modern, and conversion-focused designs that provide the best user experience.</p>
+          </div>
+
+          <!-- Service Item -->
+          <div class="animate_top sg oi pi zq ml il am cn _m">
+            <img src="images/icon-06.svg" alt="Icon" />
+            <h4 class="ek zj kk wm nb _b">Branding & Graphic Design</h4>
+            <p>Logo design, posters, social media creatives, banners, and complete brand identity solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Services End ===== -->
+
 
     <!-- ===== Team Start ===== -->
     <section class="i pg ji gp uq">
@@ -227,7 +304,10 @@
 
       <!-- Section Title Start -->
       <div
-        x-data="{ sectionTitle: `Meet With Our Creative Dedicated Team`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}">
+        x-data="{ sectionTitle: `The Minds Behind the Magic`, sectionTitleText: `Behind every successful project is a team of passionate professionals who work together to turn your ideas into powerful digital experiences.`}">
+        <!-- <div
+        x-data="{ sectionTitle: `Our Leadership & Experts`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}">
+         -->
         <div class="animate_top bb ze rj ki xn vq">
           <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
           </h2>
@@ -391,68 +471,6 @@
     </section>
     <!-- ===== Team End ===== -->
 
-    <!-- ===== Services Start ===== -->
-    <section id="services" class="lj tp kr">
-      <!-- Section Title Start -->
-      <div
-        x-data="{ sectionTitle: `We Offer The Best Quality Service for You`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}">
-        <div class="animate_top bb ze rj ki xn vq">
-          <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
-          </h2>
-          <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-        </div>
-
-
-      </div>
-      <!-- Section Title End -->
-
-      <div class="bb ze ki xn yq mb en">
-        <div class="wc qf pn xo ng">
-          <!-- Service Item -->
-          <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="images/icon-04.svg" alt="Icon" />
-            <h4 class="ek zj kk wm nb _b">Crafted for Startups</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-          </div>
-
-          <!-- Service Item -->
-          <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="images/icon-05.svg" alt="Icon" />
-            <h4 class="ek zj kk wm nb _b">High-quality Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-          </div>
-
-          <!-- Service Item -->
-          <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="images/icon-06.svg" alt="Icon" />
-            <h4 class="ek zj kk wm nb _b">All Essential Sections</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-          </div>
-
-          <!-- Service Item -->
-          <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="images/icon-07.svg" alt="Icon" />
-            <h4 class="ek zj kk wm nb _b">Speed Optimized</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-          </div>
-
-          <!-- Service Item -->
-          <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="images/icon-05.svg" alt="Icon" />
-            <h4 class="ek zj kk wm nb _b">Fully Customizable</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-          </div>
-
-          <!-- Service Item -->
-          <div class="animate_top sg oi pi zq ml il am cn _m">
-            <img src="images/icon-06.svg" alt="Icon" />
-            <h4 class="ek zj kk wm nb _b">Regular Updates</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ===== Services End ===== -->
 
     <!-- ===== Pricing Table Start ===== -->
     <section x-data="setup()" class="i pg fh rm ji gp uq">
@@ -465,7 +483,7 @@
 
       <!-- Section Title Start -->
       <div
-        x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
+        x-data="{ sectionTitle: `What Sets Us Apart`, sectionTitleText: `Our solutions are built to perform, scale, and grow with your business in a fast-changing digital world.`}">
         <div class="animate_top bb ze rj ki xn vq">
           <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
           </h2>
@@ -477,7 +495,7 @@
       <!-- Section Title End -->
 
       <!-- Pricing switcher -->
-      <div class="tc wf xf jb og">
+      <!-- <div class="tc wf xf jb og">
         <span class="ek kk wm">Bill Monthly</span>
         <button class="i rg gm" x-cloak @click="billPlan == 'monthly' ? billPlan = 'annually' : billPlan = 'monthly'">
           <div class="fe id bl gh rg xk outline-none"></div>
@@ -485,7 +503,7 @@
             :class="{ 'ff': billPlan == 'monthly', 'gf': billPlan == 'annually' }"></div>
         </button>
         <span class="ek kk wm">Bill Annually</span>
-      </div>
+      </div> -->
 
       <!-- Pricing Table -->
       <div class="bb ze i va ki xn yq bc">
@@ -493,20 +511,20 @@
           <template x-for="(plan, i) in plans" x-key="i">
             <!-- Pricing Item -->
             <div class="animate_top rj sg hh sm vk xm hi nj oj">
-              <h4 x-text="plan.name" class="wj kk wm fb"></h4>
+              <!-- <h4 x-text="plan.name" class="wj kk wm fb"></h4> -->
 
               <div class="tc wf xf kg cc">
-                <h2 :class="plan.name == 'Basic' ? 'text-green-500' : ''"
-                  x-text="`$${billPlan == 'monthly' ? plan.price.monthly : plan.price.annually}`" class="fk _j kk wm">
+                <h2 :class="plan.name == 'Modern & Scalable Technologies' ? 'text-green-500' : ''"
+                  x-text="plan.tag" class="fk _j kk wm">
                 </h2>
-                <span x-text="billPlan == 'monthly' ? '/per month' : '/per year'" class="sc ak kk wm"></span>
+                <!-- <span x-text="billPlan == 'monthly' ? '/per month' : '/per year'" class="sc ak kk wm"></span> -->
               </div>
 
-              <p class="ur dc">No credit card required</p>
+              <p class="ur dc" x-text="plan.short_desc"></p>
 
               <!-- Button -->
-              <a href="#!" class="ek rg lk ml il gi ri" :class="plan.name == 'Growth Plan' ? 'gh sl' : 'mh tl'">
-                Try for free
+              <a href="#!"  x-text="plan.name" class="ek rg lk ml il gi ri" :class="plan.name == 'Modern Technologies' ? 'gh sl' : 'mh tl'">
+                
               </a>
 
               <!-- Features -->
@@ -516,11 +534,12 @@
                 </template>
               </ul>
 
-              <p class="kk wm">7-day free trial</p>
+              <!-- <p class="kk wm">7-day free trial</p> -->
             </div>
           </template>
         </div>
       </div>
+      
     </section>
     <!-- ===== Pricing Table End ===== -->
 
@@ -528,7 +547,7 @@
     <section class="pg pj vp mr oj wp nr">
       <!-- Section Title Start -->
       <div
-        x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
+        x-data="{ sectionTitle: `Our Digital Solutions`, sectionTitleText: `Discover our latest digital creations crafted with precision, creativity, and modern technology to elevate brands and boost performance.`}">
         <div class="animate_top bb ze rj ki xn vq">
           <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
           </h2>
@@ -548,15 +567,15 @@
           </button>
           <button data-filter=".branding" @click="filterTab = 2" :class="{ 'gh lk' : filterTab === 2 }"
             class="project-tab-btn ek rg ml il vi mi">
-            Branding Strategy
+            Web Development
           </button>
           <button data-filter=".digital" @click="filterTab = 3" :class="{ 'gh lk' : filterTab === 3 }"
             class="project-tab-btn ek rg ml il vi mi">
-            Digital Experiences
+            E-Commerce Solutions
           </button>
           <button data-filter=".ecommerce" @click="filterTab = 4" :class="{ 'gh lk' : filterTab === 4 }"
             class="project-tab-btn ek rg ml il vi mi">
-            Ecommerce
+            SEO & Digital Marketing
           </button>
         </div>
 
@@ -570,7 +589,7 @@
 
               <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
                 <h4 class="ek tj kk hc">Photo Retouching</h4>
-                <p>Branded Ecommerce</p>
+                <p>Web Development</p>
                 <a class="c tc wf xf ie ld rg _g dh ml il ph jm km jc" href="#!">
                   <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -589,7 +608,7 @@
 
               <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
                 <h4 class="ek tj kk hc">Photo Retouching</h4>
-                <p>Branded Ecommerce</p>
+                <p>Ecommerce</p>
                 <a class="c tc wf xf ie ld rg _g dh ml il ph jm km jc" href="#!">
                   <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -608,7 +627,7 @@
 
               <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
                 <h4 class="ek tj kk hc">Photo Retouching</h4>
-                <p>Branded Ecommerce</p>
+                <p>Web Development</p>
                 <a class="c tc wf xf ie ld rg _g dh ml il ph jm km jc" href="#!">
                   <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -627,7 +646,7 @@
 
               <div class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
                 <h4 class="ek tj kk hc">Photo Retouching</h4>
-                <p>Branded Ecommerce</p>
+                <p>Ecommerce</p>
                 <a class="c tc wf xf ie ld rg _g dh ml il ph jm km jc" href="#!">
                   <svg class="th lm ml il" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -644,9 +663,9 @@
     <!-- ===== Projects End ===== -->
 
     <!-- ===== Testimonials Start ===== -->
-    <section class="hj rp hr">
+    <!-- <section class="hj rp hr"> -->
       <!-- Section Title Start -->
-      <div
+      <!-- <div
         x-data="{ sectionTitle: `Client’s Testimonials`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
         <div class="animate_top bb ze rj ki xn vq">
           <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
@@ -655,31 +674,31 @@
         </div>
 
 
-      </div>
+      </div> -->
       <!-- Section Title End -->
 
-      <div class="bb ze ki xn ar">
-        <div class="animate_top jb cq">
+      <!-- <div class="bb ze ki xn ar"> -->
+        <!-- <div class="animate_top jb cq"> -->
           <!-- Slider main container -->
-          <div class="swiper testimonial-01">
+          <!-- <div class="swiper testimonial-01"> -->
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <!-- <div class="swiper-wrapper"> -->
               <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="i hh rm sg vk xm bi qj">
+              <!-- <div class="swiper-slide"> -->
+                <!-- <div class="i hh rm sg vk xm bi qj"> -->
                   <!-- Border Shape -->
-                  <span class="rc je md/2 gh xg h q r"></span>
-                  <span class="rc je md/2 mh yg h q p"></span>
+                  <!-- <span class="rc je md/2 gh xg h q r"></span> -->
+                  <!-- <span class="rc je md/2 mh yg h q p"></span> -->
 
-                  <div class="tc sf rn tn un zf dp">
-                    <img class="bf" src="images/testimonial.png" alt="User" />
+                  <!-- <div class="tc sf rn tn un zf dp"> -->
+                    <!-- <img class="bf" src="images/testimonial.png" alt="User" /> -->
 
-                    <div>
-                      <img src="images/icon-quote.svg" alt="Quote" />
-                      <p class="ek ik xj _p kc fb">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed,
-                        ullamcorper semper ligula. Mauris consequat justo volutpat.
-                      </p>
+                    <!-- <div> -->
+                      <!-- <img src="images/icon-quote.svg" alt="Quote" /> -->
+                      <!-- <p class="ek ik xj _p kc fb"> -->
+                        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, -->
+                        <!-- ullamcorper semper ligula. Mauris consequat justo volutpat. -->
+                      <!-- </p>
 
                       <div class="tc yf vf">
                         <div>
@@ -693,9 +712,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- If we need navigation -->
-            <div class="tc wf xf fg jb">
+            <!-- <div class="tc wf xf fg jb">
               <div class="swiper-button-prev c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym">
                 <svg class="th lm" width="14" height="14" viewBox="0 0 14 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -716,7 +735,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ===== Testimonials End ===== -->
 
     <!-- ===== Counter Start ===== -->
@@ -750,9 +769,9 @@
     <!-- ===== Counter End ===== -->
 
     <!-- ===== Clients Start ===== -->
-    <section class="pj vp mr">
+    <!-- <section class="pj vp mr"> -->
       <!-- Section Title Start -->
-      <div
+      <!-- <div
         x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
         <div class="animate_top bb ze rj ki xn vq">
           <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
@@ -761,10 +780,10 @@
         </div>
 
 
-      </div>
+      </div> -->
       <!-- Section Title End -->
 
-      <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
+      <!-- <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
         <div class="wc rf qn zf cp kq xf wf">
           <a href="#!" class="rc animate_top">
             <img class="th wl ml il zl om" src="images/brand-light-01.svg" alt="Clients" />
@@ -792,14 +811,14 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ===== Clients End ===== -->
 
     <!-- ===== Blog Start ===== -->
     <section class="ji gp uq">
       <!-- Section Title Start -->
       <div
-        x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
+        x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `Stay updated with the latest trends, expert tips, and practical strategies in web development, digital marketing, SEO, and modern business technology — all in one place.`}">
         <div class="animate_top bb ze rj ki xn vq">
           <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
           </h2>
@@ -818,7 +837,7 @@
               <img class="w-full" src="images/blog-01.png" alt="Blog" />
 
               <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
+                <a href="./blog-1.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
               </div>
             </div>
 
@@ -834,7 +853,7 @@
                 </div>
               </div>
               <h4 class="ek tj ml il kk wm xl eq lb">
-                <a href="blog-single.html">Free advertising for your online business</a>
+                <a href="blog-1.html">Why Every Business Needs a Website in 2025</a>
               </h4>
             </div>
           </div>
@@ -845,7 +864,7 @@
               <img class="w-full" src="images/blog-02.png" alt="Blog" />
 
               <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
+                <a href="./blog-2.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
               </div>
             </div>
 
@@ -861,7 +880,7 @@
                 </div>
               </div>
               <h4 class="ek tj ml il kk wm xl eq lb">
-                <a href="blog-single.html">9 simple ways to improve your design skills</a>
+                <a href="blog-2.html">How SEO Helps Your Business Grow Faster</a>
               </h4>
             </div>
           </div>
@@ -872,7 +891,7 @@
               <img class="w-full" src="images/blog-03.png" alt="Blog" />
 
               <div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
-                <a href="./blog-single.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
+                <a href="./blog-3.html" class="vc ek rg lk gh sl ml il gi hi">Read More</a>
               </div>
             </div>
 
@@ -888,7 +907,7 @@
                 </div>
               </div>
               <h4 class="ek tj ml il kk wm xl eq lb">
-                <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
+                <a href="blog-3.html">E-Commerce Trends Every Business Should Follow</a>
               </h4>
             </div>
           </div>
@@ -1047,15 +1066,23 @@
         <div class="tc uf sn tn un gg">
           <div class="animate_left to/2">
             <h2 class="fk vj zp pr lk ac">
-              Join with 5000+ Startups Growing with Base.
+              Ready to Grow Your Business Digitally?
             </h2>
             <p class="lk">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
-              efficitur leo. Ut venenatis rhoncus.
+              Take the next step toward building solutions designed for performance, scalability, and real results. Whether you need a new website, better visibility, or complete digital transformation — our experts are ready to help you succeed.
             </p>
+            <!-- <p class="lk">
+              ✅ Free Consultation
+            </p>
+            <p class="lk">
+              ✅ Custom Solutions
+            </p>
+            <p class="lk">
+              ✅ Expert Support
+            </p> -->
           </div>
           <div class="animate_right bf">
-            <a href="#!" class="vc ek kk hh rg ol il cm gi hi">
+            <a href="index.html#support" class="vc ek kk hh rg ol il cm gi hi">
               Get Started Now
             </a>
           </div>
@@ -1077,7 +1104,7 @@
               <img src="images/logo-dark.svg" alt="Logo" class="xc nm" />
             </a>
 
-            <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="lc fb">Turning Ideas into Digital Reality.</p>
 
             <ul class="tc wf cg">
               <li>
@@ -1261,28 +1288,34 @@
 
         plans: [
           {
-            name: 'Starter',
+            name: 'Result-Driven Approach',
             price: {
               monthly: 29,
               annually: 29 * 12 - 199,
             },
-            features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+            tag:'Performance',
+            short_desc: 'We Focus on What Truly Matters',
+            features: ['Every strategy, design, and line of code is built with one goal in mind — delivering measurable growth and real business impact.'],
           },
           {
-            name: 'Growth Plan',
+            name: 'Modern Technologies',
             price: {
               monthly: 59,
               annually: 59 * 12 - 100,
             },
-            features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+            tag:'Innovation',
+            short_desc: 'Built with future-ready tools that grow with your business.',
+            features: ['We use the latest tools and future-ready technologies to ensure your website and systems grow seamlessly with your business.'],
           },
           {
-            name: 'Business',
+            name: 'Dedicated Support',
             price: {
               monthly: 139,
               annually: 139 * 12 - 100,
             },
-            features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+            tag:'Reliability',
+            short_desc: 'Your Success Is Our Priority',
+            features: ['From project kickoff to post-launch support, our team stays connected with you at every step for smooth execution and peace of mind.'],
           },
         ],
       };
